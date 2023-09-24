@@ -1,0 +1,14 @@
+/* Importation des fonts */
+@font-face {
+    font-family: 'Alata', sans-serif;
+    src: url(../fonts/Alata-Regular.ttf);
+font-weight: 400;
+}
+
+@font-face {
+
+font-family: 'Josefin Sans', sans-serif;
+src: url(../fonts/JosefinSans-Light.ttf);
+font-weight: 300;
+}
+
