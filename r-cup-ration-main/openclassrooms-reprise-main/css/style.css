@@ -25,37 +25,49 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     width: 100%;
     height: 70vh;
+    top: 0;
 
 
 
 }
-#logo{
 
-    color: white;
-  font-family:'Alata', sans-serif;
-  font-weight: 400;
-  position: relative;
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0.5rem;
 }
 
-.cadre{
+/* *{ 
+    width:auto ;
+    margin: auto;
+}
+*/
+
+
+.cadre {
     width: 55vw;
-    height:20vh;
-    border:2px solid white ;
- margin: 100px;
- padding:0.5rem ;
- position: sticky;
- display: flex;
- align-items: flex-start;
- flex-direction: column;
- justify-content: center;
+    height: 20vh;
+    border: 2px solid white;
 
- 
- 
- 
-  
-  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+
+
+
 }
 
 h1 {
@@ -63,29 +75,124 @@ h1 {
     font-weight: 300;
     text-align: justify;
     color: white;
-   
-   
+
+
 
 
 
 }
-nav{
+
+nav {
     display: flex;
-    position: absolute;
-    flex-direction: row-reverse;
-    align-items: flex-end;
+
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 11px 5px -6px rgba(0, 0, 0, 0.76);
+    background-color: #241f1fa9;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    top: 0;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: alata;
+    font-size: 10px;
+
+}
+
+.liens a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.2s;
+
+
+
+}
+
+
+#burger {
+    display:none;
+  
+}
+
+
+.liens a:hover {
+    background-color: #ebdeded3;
+}
+
+/* Style du bouton du menu hamburger */
+#burger:checked~.liens {
+    max-height: 600px;
+    /* Affiche le menu en cas de vérification de la case "burger" */
+}
+.intro,img{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height:40vh;
+}
+.aside{
+
+    background-color: rgba(0, 0, 0, 0.301);
+    width: 60vw;
+    height: 30vh;
+    display:flex;
+    justify-content: center;
+ align-items: center;
+right: 20px;
+    
+}
+
+
+.aside,h2,p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  position: relative;
+    width: 60vh;
+    height: 30%;
+   
+
+}
+
+
+h2{
+    font-family: "Josefin Sans";
+    text-align: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.storytelling{
+    text-align: center;
+    font-family: "Josefin Sans";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
+
+
+
 
 
 
 @media screen and (min-width: 376px) {
-
-
+    nav label {
+        display: none;
+    }
 }
 
 
 
-@media screen and (max-width: 1440px) {
-
-    
-}
+@media screen and (max-width: 1440px) {}
